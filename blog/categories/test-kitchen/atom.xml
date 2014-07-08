@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Test-kitchen | My Octopress Blog]]></title>
+  <link href="http://ryrydundun.github.io/blog/categories/test-kitchen/atom.xml" rel="self"/>
+  <link href="http://ryrydundun.github.io/"/>
+  <updated>2014-07-07T20:16:56-07:00</updated>
+  <id>http://ryrydundun.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Chef and Test Kitchen Over VPN]]></title>
+    <link href="http://ryrydundun.github.io/blog/2014/07/07/chef-and-test-kitchen-over-vpn/"/>
+    <updated>2014-07-07T20:09:04-07:00</updated>
+    <id>http://ryrydundun.github.io/blog/2014/07/07/chef-and-test-kitchen-over-vpn</id>
+    <content type="html"><![CDATA[<p>Been fighting with DNS over VPN really killing my local chef testing from home. After some digging around you need to set this in the kitchen.yml (or kitchen.local.yml):</p>
+
+<p>``` yaml kitchen.yml
+driver_config:</p>
+
+<h1>&hellip;</h1>
+
+<p>  customize:</p>
+
+<pre><code>natdnshostresolver1: "on"
+</code></pre>
+
+<p>```</p>
+
+<p>Hopefully this will save someone a headache.</p>
+]]></content>
+  </entry>
+  
+</feed>

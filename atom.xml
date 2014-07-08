@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ryrydundun.github.io/atom.xml" rel="self"/>
   <link href="http://ryrydundun.github.io/"/>
-  <updated>2014-07-02T11:48:26-07:00</updated>
+  <updated>2014-07-07T20:16:56-07:00</updated>
   <id>http://ryrydundun.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Chef and Test Kitchen Over VPN]]></title>
+    <link href="http://ryrydundun.github.io/blog/2014/07/07/chef-and-test-kitchen-over-vpn/"/>
+    <updated>2014-07-07T20:09:04-07:00</updated>
+    <id>http://ryrydundun.github.io/blog/2014/07/07/chef-and-test-kitchen-over-vpn</id>
+    <content type="html"><![CDATA[<p>Been fighting with DNS over VPN really killing my local chef testing from home. After some digging around you need to set this in the kitchen.yml (or kitchen.local.yml):</p>
+
+<figure class='code'><figcaption><span>kitchen.yml</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">driver_config</span><span class="p-Indicator">:</span>
+</span><span class='line'><span class="c1"># ...</span>
+</span><span class='line'>  <span class="l-Scalar-Plain">customize</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">natdnshostresolver1</span><span class="p-Indicator">:</span> <span class="s">&quot;on&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Hopefully this will save someone a headache.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Init]]></title>
