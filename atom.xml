@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Lightbulbs]]></title>
   <link href="http://ryrydundun.github.io/atom.xml" rel="self"/>
   <link href="http://ryrydundun.github.io/"/>
-  <updated>2014-07-07T20:16:56-07:00</updated>
+  <updated>2014-07-07T20:29:40-07:00</updated>
   <id>http://ryrydundun.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Shannon Ryan Dunn]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
